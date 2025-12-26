@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "checkJs": true,
+    "resolveJsonModule": true
+  },
+  "exclude": ["node_modules", "**/node_modules/*", "tests"]
+}
