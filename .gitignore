@@ -1,6 +1,6 @@
 # VSCode
 .vscode/
 
-# NPM
+# Node & NPM
+node_modules/
 package-lock.json
-
