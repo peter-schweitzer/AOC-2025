@@ -1,3 +1,4 @@
+import { LOG } from '@peter-schweitzer/ez-utils';
 import { readFileSync } from 'node:fs';
 
 /**
@@ -6,4 +7,13 @@ import { readFileSync } from 'node:fs';
  */
 export function read_input(is_real = false) {
   return readFileSync(is_real ? 'input.txt' : 'test.txt', { encoding: 'utf-8' });
+}
+
+/**
+ * @template {any} T
+ * @param {T} val
+ * @returns {T}
+ */
+export function inspect(val) {
+  return LOG(val), val;
 }
